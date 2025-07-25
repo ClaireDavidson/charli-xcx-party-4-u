@@ -1,9 +1,30 @@
-* {
+html {
+    background-color: #f1c1bf;
     text-align: center;
+}
+
+h1 {
+    color: #bf5466
+}
+
+h2 {
+    color: #bf5466;
+}
+
+h3 {
+    color: #bf5466;
+}
+
+p {
+    color: #bf5466;
+}
+
+a {
+    color: #773038;
 }
 
 img {
     width: 500px;
     max-width: 100%;
-    border: 2px solid black;
+    border: 2px solid #773038;
 }

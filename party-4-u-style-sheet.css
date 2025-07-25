@@ -33,3 +33,7 @@ img {
     max-width: 100%;
     border: 2px solid #773038;
 }
+
+hr {
+    border-color:#bf5466;
+}

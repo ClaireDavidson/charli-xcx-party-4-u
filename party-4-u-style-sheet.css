@@ -4,6 +4,7 @@ html {
 }
 
 h1 {
+    font-size: 48px;
     color: #bf5466
 }
 
@@ -13,6 +14,10 @@ h2 {
 
 h3 {
     color: #bf5466;
+}
+
+#footer {
+    size: 32px;
 }
 
 p {

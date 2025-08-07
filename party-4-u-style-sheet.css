@@ -19,6 +19,7 @@ h1 {
     font-family: 'Special Gothic Expanded One', sans-serif;
     font-size: 48px;
     color: #bf5466;
+    margin-top: -3px;
     margin-bottom: -3px;
 }
 
@@ -55,5 +56,5 @@ img {
 }
 
 hr {
-    border-color: #bf5466;
+    border-color:#bf5466;
 }

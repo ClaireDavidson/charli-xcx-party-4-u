@@ -12,39 +12,175 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap" rel="stylesheet">
     </head>
+    <style>
+    @media (min-width: 1650px) {
+        .block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
 
+        .group {
+            display: grid;
+            height: 1500px;
+            grid-template-columns: repeat(3, 500px);
+            grid-template-rows: 280px repeat(3, 325px);
+            gap: 50px;
+            margin: auto;
+        }
+        
+        .container {
+            padding: 10px;
+        }
+
+        #photo {
+            margin-bottom: -7px;
+        }
+
+        #coachella-vogue {
+            order: 1;
+        }
+
+        #observer {
+            order: 2;
+        }
+
+        #party-girl-next-door {
+            order: 3;
+            grid-row: span 2;
+        }
+
+        #brat-banner {
+            order: 4;
+            margin-top: 20px;
+        }
+
+        #barbie-pink-dress {
+            order: 5;
+            margin-top: 35px
+        }
+
+        #charliwood {
+            order: 6;
+            grid-row: span 2;
+            margin-top: 41px;
+        }
+
+        #troye-and-charli-and-lorde-and-addison {
+            order: 7;
+        }
+
+        #wedding-dress {
+            order: 8;
+            margin-top: 24px;
+        }
+
+        #snl-shrug {
+            order: 9;
+            grid-row-start: 3;
+            grid-column-start: 3;
+            margin-top: 65px;
+        }
+
+        #walkie-talkie {
+            order: 10;
+            grid-row: span 2;
+            grid-column-start: 3;
+            grid-row-start: 4;
+            margin-top: 43px;
+        }
+    }
+
+    #photo {
+            margin-bottom: -7px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+    </style>
     <body>
+        <h3 id="footer"><a href="./index.html">Lyrics</a> | <a href="./press-page.html">Press</a></h3>
         <h1>Gallery</h1>
         <p>How she's living now.</p>
-        
-        <hr />
         <br />
-
-        <div import="ratio">
-            <img src="./images/Charli_Coachella_Vogue_0072.webp"/><br />
-            <p>Photographed for <i>Vogue</i>.</p>
-            <img src="./images/charli-xcx-for-the-observer.jpg" /><br />
-            <p>Photographed for the <i>Observer</i>.</p>
-            <img src="./images/charli-xcx-party-girl-door.jpg"/><br />
-            <p>Party girl next door.</p>
-            <img src="./images/charli-xcx-brat-banner.webp" /><br />
-            <p>Performing at the Paramount Theater in Brooklyn.</p>
-            <img src="./images/charli-xcx-pink-dress.webp" /><br />
-            <p>Promotional photo for the single "Speed Drive," from the <i>Barbie</i> soundtrack.</p>
-            <img src="./images/troye-and-charli-and-lorde-and-addison.jpg" /><br />
-            <p>Gang's all here.</p>
-            <img src="./images/charli-xcx-charliwood-tee.jpg" /><br />
-            <p>Photographed for <i>W</i> Magazine.</p>
-            <img src="./images/charli-xcx-snl-shrug.webp" /><br />
-            <p>Hosting <i>Saturday Night Live</i>.</p>
-            <img src="./images/charli-xcx-miss-should-be-headliner.webp" /><br />
-            <p>Behind the scenes at Coachella.</p>
-            <img src="./images/charli-xcx-wedding-dress.jpg" /><br />
-            <p>365 bridal girl.</p>
+        <div class="block">
+            <div class="group" import="ratio">
+                <div class="container" id="coachella-vogue">
+                    <a href="https://www.vogue.com/slideshow/charli-xcx-coachella-fashion-wardrobe">
+                        <img src="./images/Charli_Coachella_Vogue_0072.webp" id="photo"/>
+                    </a>
+                    <br />
+                    <p id="text">Photographed for <i>Vogue</i>.</p>
+                </div>
+                <div class="container" id="observer">
+                    <a href="https://www.theguardian.com/music/article/2024/jun/02/charli-xcx-interview-brat-360-b2b-club-classics-dutch">
+                        <img src="./images/charli-xcx-for-the-guardian.jpg" id="photo"/>
+                    </a>
+                    <br />
+                    <p id="text">Photographed for the <i>Guardian</i>.</p>
+                </div>
+                <div class="container" id="party-girl-next-door">
+                    <a href="https://theface.com/culture/jeremy-o-harris-interview-slave-play-charli-xcx-von-dutch-review-paris-milan-fashion-week">
+                        <img src="./images/charli-xcx-party-girl-door.jpg" id="photo"/>
+                    </a>
+                    <br />    
+                    <p id="text">Party girl next door.</p>
+                </div>
+                <div class="container" id="brat-banner">
+                    <a href="https://variety.com/2024/music/news/charli-xcx-concert-review-brat-matty-healy-1236035071/">
+                        <img src="./images/charli-xcx-brat-banner.webp" id="photo"/>
+                    </a>
+                    <br />
+                    <p id="text">Performing at the Paramount Theater in Brooklyn.</p>
+                </div>
+                <div class="container" id="barbie-pink-dress">
+                    <a href="https://www.nme.com/news/music/charli-xcx-shares-new-single-speed-drive-from-barbie-soundtrack-listen-3463398">
+                        <img src="./images/charli-xcx-pink-dress.webp" id="photo"/>
+                    </a>
+                    <br />
+                    <p id="text">Promotional photo for the single "Speed Drive," from the <i>Barbie</i> soundtrack.</p>
+                </div>
+                <div class="container" id="troye-and-charli-and-lorde-and-addison">
+                    <a href="https://www.billboard.com/music/pop/charli-xcx-troye-sivan-sweat-tour-nyc-1235782197/">
+                        <img src="./images/troye-and-charli-and-lorde-and-addison.jpg" id="photo"/>
+                    </a>
+                    <br />
+                    <p id="text">Gang's all here.</p>
+                </div>
+                <div class="container" id="charliwood">
+                    <a href="https://www.wmagazine.com/culture/charli-xcx-cover-interview-grammys-2025">
+                        <img src="./images/charli-xcx-charliwood-tee.jpg" id="photo"/>
+                    </a>
+                    <br />
+                    <p id="text">Photographed for <i>W</i> Magazine.</p>
+                </div>
+                <div class="container" id="snl-shrug">
+                    <a href="https://www.nbc.com/nbc-insider/watch-charli-xcx-snl-sketches-and-monologue-november-16-2024">
+                        <img src="./images/charli-xcx-snl-shrug.webp" id="photo"/>
+                    </a>
+                    <br />
+                    <p id="text">Hosting <i>Saturday Night Live</i>. (On my birthday weekend, no less!)</p>
+                </div>
+                <div class="container" id="wedding-dress">
+                    <a href="https://www.cnn.com/2025/07/21/style/look-of-the-week-charli-xcx-is-the-anti-bride">
+                        <img src="./images/charli-xcx-wedding-dress.jpg" id="photo"/>
+                    </a>
+                    <br />
+                    <p id="text">365 bridal girl.</p>
+                </div>
+                <div class="container" id="walkie-talkie">
+                    <a href="https://www.cosmopolitan.com/entertainment/celebs/a64672027/charli-xcx-met-gala-glam/">
+                        <img src="./images/charli-xcx-with-walkie-talkie.avif" id="photo"/>
+                    </a>
+                    <br />
+                    <p id="text">Behind the scenes at the 2025 Met Gala.</p>
+                </div>
+            </div>
         </div>
-
         <hr />
-
-        <h3 id="footer"><a href="./index.html">Lyrics</a> | <a href="./press-page.html">Press</a></h3>
+        <p class="footer">Created by Claire Davidson using GitHub.</p>
     </body>
 </html>
